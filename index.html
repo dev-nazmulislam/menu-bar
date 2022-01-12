@@ -10,37 +10,44 @@
   <body>
     <header class="nav-container">
       <nav class="menu-container">
-        <h1>
-          <a href="#">
-            <img src="images/logo.png" alt="" />
-          </a>
-        </h1>
+        <div class="taggle">
+          <h1>
+            <a href="#">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </h1>
+          <div class="mobile-nav">
+            <label for="toggle"><h2>&#9776;</h2></label>
+          </div>
+        </div>
+        <input type="checkbox" id="toggle" />
         <ul class="menu">
-          <li><a href="#">Support</a></li>
-          <li><a href="#">My Classes</a></li>
-          <li>
-            <a href="#">
-              <img src="images/notification.png" alt="" height="18px" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/chart.png" alt="" height="18px" />
-            </a>
-          </li>
-          <li>
-            <a class="gem" href="#">
-              <img src="images/gem.svg" alt="" height="23px" />
-              <span>100</span>
-            </a>
-          </li>
+          <div class="menu-list">
+            <li><a href="#">Support</a></li>
+            <li><a href="#">My Classes</a></li>
+            <li>
+              <a href="#">
+                <img src="images/notification.png" alt="" height="18px" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/chart.png" alt="" height="18px" />
+              </a>
+            </li>
+            <li>
+              <a class="gem" href="#">
+                <img src="images/gem.svg" alt="" height="23px" />
+                <span>100</span>
+              </a>
+            </li>
+          </div>
           <li class="order">
             <a href="#">
               <img id="profile-pic" src="images/profile-pic.jpg" alt="" />
             </a>
           </li>
         </ul>
-        <!-- <span>Hello</span> -->
       </nav>
     </header>
   </body>

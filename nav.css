@@ -30,6 +30,11 @@ header {
   display: flex;
   align-items: center;
 }
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 .menu li {
   margin-right: 18px;
 }
@@ -57,15 +62,44 @@ header {
   height: 40px;
   border-radius: 50%;
 }
+.mobile-nav {
+  display: none;
+}
+.taggle {
+  display: flex;
+  justify-content: space-between;
+}
+#toggle {
+  display: none;
+}
+
 /* Responsive Style CSS */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .menu-container {
     flex-direction: column;
   }
   .menu {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    display: none;
   }
-  .menu > * {
-    margin-bottom: 1rem;
+  .mobile-nav {
+    display: block;
+  }
+  .menu-list {
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .menu-list > * {
+    margin-bottom: 0.8rem;
+  }
+  #profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  .taggle {
+    width: 100%;
+  }
+  #toggle:checked + .menu {
+    display: flex;
   }
 }
