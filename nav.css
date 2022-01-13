@@ -103,3 +103,8 @@ header {
     display: flex;
   }
 }
+/* Divider */
+.divider {
+  margin: 10rem 0;
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  padding: 5rem 0rem;
+  text-align: center;
+  position: relative;
+}
+.container h1,
+.container h2 {
+  color: #bebebe;
+  margin-bottom: 0.8rem;
+}
+.profile {
+  display: block;
+  width: 20%;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #bebebe;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all ease 0.3s;
+}
+.btn:hover {
+  border: 1px solid #fffdfd;
+  color: #ffffff;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  width: 100px;
+  height: 20px;
+  background: linear-gradient(to top, #ffffff, black);
+  border-radius: 50%;
+  transform: rotate(-40deg);
+}
+.container::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 100px;
+  height: 20px;
+  background: linear-gradient(to top, #ffffff, black);
+  border-radius: 50%;
+  transform: rotate(40deg);
+}
+.content {
+  position: relative;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: 190px;
+  width: 60px;
+  height: 80%;
+  filter: blur(60px);
+  background: linear-gradient(white, white);
+  transform: rotate(-60deg);
+  box-shadow: 50px 100px 100px 100px rgba(255, 255, 255, 0.3);
+}
+.content::after {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: 190px;
+  width: 60px;
+  height: 80%;
+  filter: blur(60px);
+  background: linear-gradient(white, white);
+  transform: rotate(60deg);
+  box-shadow: -50px 100px 100px 100px rgba(255, 255, 255, 0.3);
+}
